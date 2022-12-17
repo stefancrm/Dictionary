@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky Button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+  	<div class="container">
+		<div id="header" class="row justify-content-center px-4 py-3 my-3 text-center">
+			<div id="title" class="col col-4 align-self-center">
+				<h1>
+					Dictionary
+				</h1>
+			</div>
+		</div>
+		<div id="body" class="row">
+			<div class="col">
+			
+				<div id="inner-form-add">
+					<input id="insertValue" class="form-control" type="text" placeholder="Add to dictionary">
+					<button id="btnInsert" class="btn btn-primary mb-3" type="button" onClick="insert()">Insert</button>
+
+				</div>			
+			
+			</div>
+			<div class="col">
+			
+				<div id="inner-form-search">
+					<input id="searchValue" class="form-control" type="text" placeholder="Search dictionary">
+					<button id="btnSearch" class="btn btn-primary mb-3" type="button" onClick="search()">Search</button>
+
+				</div>			
+			
+			</div>
+		</div>
+		<div class="container">
+			<div class="row align-bottom align-ri">
+				<p id="message"></p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row align-bottom align-ri">
+				<p name="footer">
+				Developed by Stefan Caramizoiu
+				</p>
+			</div>
+		</div>
+	</div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
